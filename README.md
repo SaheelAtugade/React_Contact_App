@@ -18,6 +18,7 @@ A simple React project built while learning React fundamentals. This project all
 - Passing Functions as Props
 - Dynamic Rendering
 - Component Reusability
+- Responsive UI
 
 ## 🛠️ Tech Stack
 
