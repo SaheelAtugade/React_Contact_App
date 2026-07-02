@@ -1,7 +1,7 @@
 import React from "react";
 
 const ContactCard = ({user,deleteContact}) => {
-    const defaultPic = "/React_Contact_App/images/defaultProfilePic.png";
+    const defaultPic = "/images/defaultProfilePic.png";
   return (
     <div
       className="w-full border-gray-400 border-2 rounded p-2.5 mb-2.5 flex gap-4 items-center relative"
