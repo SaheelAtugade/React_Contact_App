@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Form = ({ allUsers, setAllUsers }) => {
+const Form = ({ setAllUsers }) => {
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
   const [profile, setProfile] = useState("");
@@ -18,9 +18,9 @@ const Form = ({ allUsers, setAllUsers }) => {
       onSubmit={(e) => {
         submitHandler(e);
       }}
-      className="flex flex-col gap-4 w-100 mx-auto mt-10 bg-amber-50 p-6 rounded-lg shadow-md"
+      className="flex flex-col gap-4 w-87.5 sm:w-100 bg-zinc-50 p-6 rounded-lg shadow-md"
     >
-      <h2 className="text-3xl font-bold text-center text-zinc-800">
+      <h2 className="lg:text-3xl text-2xl font-bold text-center text-zinc-800">
         Add New Contact
       </h2>
       <input

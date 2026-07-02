@@ -6,7 +6,7 @@
         setAllUsers((prev) => prev.filter((user) => user.id !== id));
     };
     return (
-        <div className="bg-zinc-50 w-100 mt-8 p-5 mx-auto">
+        <div className="bg-zinc-50 w-87.5 sm:w-100 p-5 rounded-lg shadow-md">
         {allUsers.length === 0 ? (
             <p className="text-center text-gray-500">No Contacts Found</p>
         ) : (
