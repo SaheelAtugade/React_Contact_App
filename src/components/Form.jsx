@@ -21,7 +21,7 @@ const Form = ({ setAllUsers, allUsers }) => {
       onSubmit={(e) => {
         submitHandler(e);
       }}
-      className="flex flex-col gap-4 w-87.5 sm:w-100 bg-zinc-50 p-6 rounded-lg shadow-md"
+      className="flex flex-col gap-4 w-full sm:w-100 bg-zinc-50 p-6 rounded-lg shadow-md"
     >
       <h2 className="lg:text-3xl text-2xl font-bold text-center text-zinc-800">
         Add New Contact

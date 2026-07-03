@@ -9,7 +9,7 @@
         localStorage.setItem('Contacts',JSON.stringify(newUsers));
     };
     return (
-        <div className="bg-zinc-50 w-87.5 sm:w-100 p-5 rounded-lg shadow-md">
+        <div className="bg-zinc-50 w-full  sm:w-100 p-5 rounded-lg shadow-md">
         {allUsers.length === 0 ? (
             <p className="text-center text-gray-500">No Contacts Found</p>
         ) : (
