@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 
-const Form = ({ setAllUsers }) => {
+const Form = ({ setAllUsers, allUsers }) => {
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
   const [profile, setProfile] = useState("");
 
   const submitHandler = (e) => {
     e.preventDefault();
-    setAllUsers((prev) => [...prev, { id: Date.now(), name, number, profile }]);
+    // setAllUsers((prev) => [...prev, { id: Date.now(), name, number, profile }]);
+    const newUsers = [...allUsers,{id: Date.now(), name, number,profile}]
+    setAllUsers(newUsers);
+    localStorage.setItem('Contacts',JSON.stringify(newUsers));
     setName("");
     setNumber("");
     setProfile("");
