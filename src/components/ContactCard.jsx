@@ -11,14 +11,14 @@ const ContactCard = ({user,deleteContact}) => {
           backgroundImage: `url(${user.profile === "" ?  defaultPic: user.profile})`,
         }}
         className={
-          "bg-red-600 h-16 w-16 rounded-full bg-cover bg-center bg-no-repeat"
+          "bg-red-600 sm:h-16 h-14 sm:w-16 w-14 rounded-full bg-cover bg-center bg-no-repeat"
         }
       ></div>
       <div>
-        <h3 className="text-xl font-normal text-zinc-800 mb-1.2">
+        <h3 className="sm:text-xl text-lg font-normal text-zinc-800 mb-1.2">
           {user.name}
         </h3>
-        <p className="text-base font-extralight text-zinc-600 mb-2">
+        <p className="text-base font-light text-zinc-600 mb-2">
           {user.number}
         </p>
         <i
