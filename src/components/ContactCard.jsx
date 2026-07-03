@@ -18,7 +18,7 @@ const ContactCard = ({user,deleteContact}) => {
         <h3 className="sm:text-xl text-lg font-normal text-zinc-800 mb-1.2">
           {user.name}
         </h3>
-        <p className="text-base font-light text-zinc-600 mb-2">
+        <p className="text-base font-normal text-zinc-600 mb-2">
           {user.number}
         </p>
         <i
