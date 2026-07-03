@@ -4,6 +4,8 @@
     const Output = ({ allUsers, setAllUsers }) => {
     const deleteContact = (id) => {
         // setAllUsers((prev) => prev.filter((user) => user.id !== id));
+        const ok  = window.confirm("Are you sure you want to delete this contact?");
+        if (!ok) return;
         const newUsers = allUsers.filter((user)=> user.id !== id);
         setAllUsers(newUsers)
         localStorage.setItem('Contacts',JSON.stringify(newUsers));
